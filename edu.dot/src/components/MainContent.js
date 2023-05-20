@@ -10,25 +10,27 @@ import udemy from "../icon/udemy.png";
 
 export default function MainContent() {
   return (
-    <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-2 lg:ml-32">
+    <div className="grid grid-cols-1 lg:grid-cols-2 sm:grid-cols-1  gap-2 lg:ml-32">
       <div className="lg:flex lg:flex-col">
         <div className="container-title font-semibold leading-tight lg:mt-20 clr-black">
-          <div className="lg:text-left md:text-center sm:text-center">
+          <div className="text-center lg:text-left sm:text-center">
             Get Skills
           </div>
-          <div className="lg:text-left md:text-center">From Our Top</div>
-          <div className="clr-orange lg:text-left md:text-center">
+          <div className="text-center lg:text-left sm:text-center">
+            From Our Top
+          </div>
+          <div className="text-center clr-orange lg:text-left sm:text-center">
             Class Courses
           </div>
         </div>
-        <div className="lg:mr-16 md:mr-0 mt-6 text-base">
-          <div className="lg:text-left md:text-center lg:mx-0 md:mx-32">
+        <div className="mr-0 lg:mr-16 sm:mr-0 mt-6 text-base">
+          <div className="text-center lg:text-left sm:text-center mx-8 lg:mx-0 sm:mx-32">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the
           </div>
         </div>
-        <div className="lg:mr-16 md:mr-0 mt-14 ">
-          <div className="lg:mx-0 md:mx-32">
+        <div className="mr-0 lg:mr-16 sm:mr-0 mt-14 ">
+          <div className="mx-8 lg:mx-0 sm:mx-32">
             <label className="relative block ">
               <span className="sr-only">Search</span>
               <span className="absolute inset-y-0 left-0 flex items-center pl-2">
@@ -48,22 +50,22 @@ export default function MainContent() {
             </label>
           </div>
         </div>
-        <div className="mt-14 flex lg:flex-col md:flex-row lg:justify-normal md:justify-between lg:mx-0 md:mx-32">
-          <div className="flex flex-row align-middle mb-6">
+        <div className="mt-14 flex flex-row lg:flex-col sm:flex-row justify-between lg:justify-normal sm:justify-between mx-8 lg:mx-0 sm:mx-32">
+          <div className="flex flex-row items-center mb-6">
             <div className="mr-2 relative">
               <img src={Star} alt="star" className="block w-6 h-6" />
               <CheckIcon className="absolute inset-1 text-white w-4 h-4" />
             </div>
             <div>Experience mentor</div>
           </div>
-          <div className="flex flex-row align-middle mb-6">
+          <div className="flex flex-row items-center mb-6">
             <div className="mr-2 relative">
               <img src={Star} alt="star" className="block w-6 h-6" />
               <CheckIcon className="absolute inset-1 text-white w-4 h-4" />
             </div>
             <div>Quality video</div>
           </div>
-          <div className="flex flex-row align-middle mb-6 ">
+          <div className="flex flex-row items-center mb-6 ">
             <div className="mr-2 relative">
               <img src={Star} alt="star" className="block w-6 h-6" />
               <CheckIcon className="absolute inset-1 text-white w-4 h-4" />
@@ -83,7 +85,7 @@ export default function MainContent() {
             />
           </div>
         </div>
-        <div className="flex flex-row justify-between lg:-ml-8 md:ml-0 lg:mr-16 md:mr-0 lg:px-0 md:px-24 mt-8">
+        <div className="flex flex-row justify-between ml-0 lg:-ml-8 sm:ml-0 mr-0 lg:mr-16 sm:mr-0 px-8 lg:px-0 sm:px-24 mt-8">
           <div>
             <img src={google} alt="google" />
           </div>

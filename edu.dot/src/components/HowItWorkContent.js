@@ -3,6 +3,7 @@ import book from "../icon/Book.png";
 import plan from "../icon/plan.png";
 import ribbon from "../icon/ribbon.png";
 import find from "../icon/find.png";
+import personAndCloud from "../icon/personAndCloud.png";
 
 export default function HowItWorkContent() {
   const dataHowItWork = [
@@ -47,7 +48,7 @@ export default function HowItWorkContent() {
             return (
               <>
                 <div
-                  className="flex flex-col  align-middle w-64 h-64 "
+                  className="flex flex-col  items-center w-64 h-64"
                   style={{ backgroundColor: el.colorContainer }}
                 >
                   <div className="rounded-full flex flex-row justify-center ">
@@ -70,6 +71,33 @@ export default function HowItWorkContent() {
               </>
             );
           })}
+        </div>
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 sm:grid-cols-1 my-24">
+        <div className="">
+          <img src={personAndCloud} alt="personAndCloud" />
+        </div>
+        <div className=" flex flex-col justify-center items-center">
+          <div className="w-96">
+            <div
+              className="font-semibold text-4xl mb-4"
+              style={{ whiteSpace: "pre-wrap" }}
+            >
+              {"Our Process is Build\nAround Quality &\nMake it Perfect"}
+            </div>
+            <div className="text-base font-normal">
+              Anenim Njilam tempor sapier gravida done porta and b adrdit ipsum
+              enim justo integer actor imeer congue magna and purus pretlium
+              insuss igula nurtrum luctue unrice.
+            </div>
+            <div className="text-base font-normal mt-4">
+              Anenim Njilam tempor sapier gravida done porta and b adrdit ipsum
+              enim justo integer actor imeer congue magna
+            </div>
+            <div className="mt-10 rounded-full bg-orange w-36 h-10 flex justify-center">
+              <button className="text-white">Discover More</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
