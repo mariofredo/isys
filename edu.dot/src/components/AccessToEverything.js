@@ -12,16 +12,16 @@ export default function AccessToEverything() {
     <div className="my-24">
       <div className="grid grid-cols-1 lg:grid-cols-2 sm:grid-cols-1 ">
         <div className=" flex flex-col justify-center items-center">
-          <div className="w-96">
+          <div className=" w-4/5 lg:w-96">
             <div
-              className="font-semibold text-4xl mb-4"
+              className="font-bold text-4xl mb-4"
               style={{ whiteSpace: "pre-wrap" }}
-            >{`Access to Everything\nFor Everyone`}</div>{" "}
+            >{`Access to Everything\nFor Everyone`}</div>
             <div className="text-base font-normal">
               Online learning program designed to prepare you for a career.
               Courses include recorded video lectures, auto graded
             </div>
-            <div className="grid grid-cols-2 gap-x-10 gap-y-3 mt-8">
+            <div className="grid grid-cols-2 gap-x-8 gap-y-3 mt-8">
               {advantageData.map((el, i) => {
                 return (
                   <>
@@ -32,7 +32,7 @@ export default function AccessToEverything() {
                       >
                         <CheckIcon className="h-5 w-5 text-white" />
                       </div>
-                      <div className="ml-2 font-semibold">{el}</div>
+                      <div className="ml-2 font-bold">{el}</div>
                     </div>
                   </>
                 );
@@ -46,7 +46,7 @@ export default function AccessToEverything() {
             </div>
           </div>
         </div>
-        <div className="">
+        <div className="flex flex-row justify-end mt-8 lg:mt-0">
           <img src={openBook} className="" alt="openBook" />
         </div>
       </div>

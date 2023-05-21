@@ -52,15 +52,13 @@ export default function OurFeatures() {
   return (
     <div>
       <div style={{ backgroundColor: "#F1F7F9" }}>
-        <div className="text-center font-semibold text-4xl py-12">
-          Our Features
-        </div>
+        <div className="text-center font-bold text-4xl py-12">Our Features</div>
         <div className="flex flex-row justify-center">
           <div className="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-1 gap-6">
             {featuresData.map((el, i) => {
               return (
-                <>
-                  <div className="w-96  bg-white rounded-2xl p-4 pb-2">
+                <div className="flex flex-col items-center">
+                  <div className="w-4/5 lg:w-80  bg-white rounded-2xl p-4 pb-2">
                     <div className="relative">
                       <div className="block">
                         <div className="flex flex-row justify-center">
@@ -69,8 +67,8 @@ export default function OurFeatures() {
                       </div>
                       <div className="absolute top-0 left-0">
                         <div className="ml-4 mt-3 bg-white rounded flex flex-row justify-evenly items-center w-24 h-8">
-                          <StarIcon className="h-5 w-5 text-yellow-300" />
-                          <div className="text-xs font-semibold">{`4.7`}</div>
+                          <StarIcon className="h-5 w-5 text-[#FFB700]" />
+                          <div className="text-xs font-bold">{`4.7`}</div>
                           <div className="text-xs ">{`(1k+)`}</div>
                         </div>
                       </div>
@@ -100,7 +98,7 @@ export default function OurFeatures() {
                       </div>
                     </div>
                   </div>
-                </>
+                </div>
               );
             })}
           </div>
@@ -112,13 +110,13 @@ export default function OurFeatures() {
         </div>
       </div>
       <div
-        className="flex flex-row justify-evenly"
+        className="flex flex-col lg:flex-row justify-evenly"
         style={{ backgroundColor: "#27424D" }}
       >
         {countData.map((el, i) => {
           return (
-            <div className="text-white my-14 flex flex-col justify-start">
-              <div className="mb-6 text-6xl font-semibold">{el.count}+</div>
+            <div className="text-white my-6 lg:my-14 flex flex-col justify-center lg:justify-start items-center lg:items-start">
+              <div className="mb-6 text-6xl font-bold">{el.count}+</div>
               <div className="text-2xl font-normal">{el.category}</div>
             </div>
           );

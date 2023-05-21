@@ -38,12 +38,10 @@ export default function HowItWorkContent() {
   ];
 
   return (
-    <div className="mt-28">
-      <div className="text-center text-4xl font-semibold mb-12">
-        How It Work
-      </div>
+    <div className="mt-10 lg:mt-28">
+      <div className="text-center text-4xl font-bold mb-12">How It Work</div>
       <div className="flex flex-row justify-center">
-        <div className="grid lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-2 gap-6">
           {dataHowItWork.map((el, i) => {
             return (
               <>
@@ -78,9 +76,9 @@ export default function HowItWorkContent() {
           <img src={personAndCloud} alt="personAndCloud" />
         </div>
         <div className=" flex flex-col justify-center items-center">
-          <div className="w-96">
+          <div className="w-4/5 lg:w-96 mt-6 lg:mt-0">
             <div
-              className="font-semibold text-4xl mb-4"
+              className="font-bold text-2xl lg:text-4xl mb-4"
               style={{ whiteSpace: "pre-wrap" }}
             >
               {"Our Process is Build\nAround Quality &\nMake it Perfect"}

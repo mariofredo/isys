@@ -5,6 +5,7 @@ import HowItWorkContent from "./components/HowItWorkContent";
 import OurFeatures from "./components/OurFeatures";
 import AccessToEverything from "./components/AccessToEverything";
 import WhatOurStudent from "./components/WhatOurStudent";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ function App() {
       <OurFeatures />
       <AccessToEverything />
       <WhatOurStudent />
+      <Footer />
     </div>
   );
 }
